@@ -1,0 +1,127 @@
+/* Base styles */
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input.error {
+  border-color: #E64646;
+}
+
+.error-message {
+  color: #E64646;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.avatar-group {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.avatar-label {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px dashed #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.avatar-label:hover {
+  border-color: #1d68f5;
+}
+
+.avatar-input {
+  display: none;
+}
+
+.avatar-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #1d68f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+  .auth-form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .form-group input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .avatar-label {
+    width: 80px;
+    height: 80px;
+  }
+
+  .avatar-placeholder {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .auth-form {
+    padding: 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 0.8rem;
+  }
+
+  .avatar-label {
+    width: 60px;
+    height: 60px;
+  }
+}
